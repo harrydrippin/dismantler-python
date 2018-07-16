@@ -32,8 +32,7 @@ def run_from_file(file_path, src_type='suite'):
 
     Usage:
         >>> import dismantler
-        >>> dismantler.run('a + 5')
-        >>> dismantler.run('source.py', src_type='suite', is_file=True)
+        >>> dismantler.run_from_file('source.py')
     """
     if type(file_path) != str:
         raise TypeError("Source must be string")

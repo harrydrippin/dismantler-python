@@ -6,8 +6,8 @@ Dismantler changes the python code to parse tree, and export it to dictionary, o
 
 Usage:
    >>> import dismantler
-   >>> d = dismantler.run_from_string('a + 5')
-   >>> d.to_dict()
+   >>> d = dismantler.run_from_string('a + 5').dictionary()
+   >>> print(d)
    {
        "type": "symbol",
        "name": "stmt",
@@ -15,8 +15,8 @@ Usage:
            // Nodes...
        ]
    }
-   >>> d = dismantler.run_from_file('file.py')
-   >>> d.to_json()
+   >>> d = dismantler.run_from_file('file.py').json()
+   >>> print(d)
    "{
        "type": "symbol",
        "name": "stmt",
