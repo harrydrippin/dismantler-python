@@ -12,15 +12,13 @@
 ██████╔╝██║███████║██║ ╚═╝ ██║██║  ██║██║ ╚████║   ██║   ███████╗███████╗██║  ██║
 ╚═════╝ ╚═╝╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚══════╝╚═╝  ╚═╝
 ```
-This module dismantles python code to parse tree, token, symbols and reproduces it to dictionary and json.
+이 모듈은 Python 코드를 Parse Tree로 해체하며, Parse Tree 그 자체와 Token들, Symbol들을 따로 모은 것을 Dictionary 혹은 JSON 데이터로 얻을 수 있습니다.
 
-[한국어 README는 여기를 참조하십시오: README.ko.md](https://github.com/harrydrippin/dismantler-python/blob/master/docs/README.ko.md)
+## 어디에 쓰는 것인가요?
 
-## What is this?
+Dismantler는 Python 코드를 입력으로 받아서 Parse Tree를 빠른 시간 이내에 생성합니다. 또한, 생성된 Parse Tree를 Dictionary나 JSON으로 내보낼 수 있습니다. 원한다면 Token들과 Symbol들의 리스트를 각각 분리된 채로 추출할수도 있습니다. 이 프로젝트는 연구 목적으로 사용하기에 적합합니다. 좋은 예로는 딥러닝 모델에게 코드를 토큰화된 순서를 가지는 데이터로써 학습시키거나, Python code를 해석해서 토큰 레벨로 나누는 등의 작업을 통해 교육용 프로그램 등에 적용될 수 있을 것입니다.
 
-Dismantler takes a Python code as input and creates a parse tree in a short time. It also export the parse tree to a dictionary or json. You can get list of tokens or symbols separately if you want. This project can be used for research purpose, such as teaching the source code to deep learning model as tokenized sequential data or interpreting the Python code on token level and using it for educational programs (like tutoring).
-
-## Basic Usage
+## 기초 사용 방법
 
 ```python
 >>> import dismantler
@@ -46,20 +44,20 @@ Dismantler takes a Python code as input and creates a parse tree in a short time
 }"
 ```
 
-## Installation
+## 설치
 
-### Via pip
+### pip을 통한 설치
 ```bash
 pip3 install dismantler-python
 ```
 
-### Via source
+### 소스 파일을 직접 빌드하여 설치
 ```bash
 git clone http://github.com/harrydrippin/dismantler-python
 cd dismantler-python
 python3 setup.py install
 ```
 
-## Contribution
+## 기여
 
-This project is very small now, so contribution to this project is very welcome. Feel free to submit some issues or PRs to this project.
+이 프로젝트는 현재 상당히 작아서, 이 프로젝트에 대한 어떠한 형태의 기여도 매우 환영합니다. Issue나 PR 등을 올려주시면 빠른 시간 안에 확인하겠습니다.
